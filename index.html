@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iftikhar Ali Hussaini - Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Load Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+    <main class="container">
+        
+        <!-- Top Section -->
+        <header class="header-section">
+            <div class="small-heading">🎓 Personal Portfolio Webpage</div>
+            <p class="subtext">Welcome to my interactive portfolio. This webpage serves as a dynamic showcase of my academic background, technical skills, and data-driven projects.</p>
+            <h1 class="main-title">Iftikhar Ali Hussaini</h1>
+            <p style="color: var(--secondary-text); font-size: 0.95rem;">161 Long Elmes, London • 07368505107 • iftiali.2006@gmail.com</p>
+            <hr class="divider">
+        </header>
+
+        <!-- Tabs Navigation -->
+        <nav class="tabs-nav">
+            <button class="tab-btn active" data-target="about">👤 About Me</button>
+            <button class="tab-btn" data-target="projects">🚀 Passion Projects</button>
+            <button class="tab-btn" data-target="interests">🌍 Personal Interests</button>
+        </nav>
+
+        <!-- Tab 1: About Me -->
+        <section id="about" class="tab-content active">
+            <div class="card">
+                <h2 class="section-title">Aspiring Financial Professional</h2>
+                
+                <div class="info-block">
+                    <h3>Personal Summary</h3>
+                    <p style="color: var(--secondary-text);">Driven and detail-oriented student with a strong academic foundation in accounting and finance. Experienced in leadership and problem-solving through roles as an assistant accountant, coach and security professional with transferable skills in teamwork, innovation and attention to detail. Eager to apply my analytical ability, financial knowledge, and a strong work ethic to support myself and my team in completing work-oriented goals.</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Experience</h3>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <strong>Gipsy Hill Federation</strong> – Assistant Accountant<br>
+                        <span style="color: var(--secondary-text); font-size: 0.9em;">London, UK | June 22nd - August 18th 2025</span>
+                        <ul class="styled-list" style="margin-top: 0.5rem;">
+                            <li>Assisted with processing invoices and updating financial records, gaining hands-on exposure to day-to-day accounting tasks</li>
+                            <li>Helped with basic reconciliations and filing, ensuring documents were accurate and organised for the rest of the finance team</li>
+                            <li>Shadowed senior accountants to understand financial reporting processes and the importance of following procedures in an educational setting</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <strong>Diffusion Elite Security</strong> – Security Personal<br>
+                        <span style="color: var(--secondary-text); font-size: 0.9em;">London, UK | January 20th 2025 – Present</span>
+                        <ul class="styled-list" style="margin-top: 0.5rem;">
+                            <li>Monitored large crowds and entry points, maintaining safety standards while paying close attention to detail in ID and ticket checks</li>
+                            <li>Worked closely with team members and supervisors to manage security operations smoothly during high-pressure events</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>Leadership Experiences</h3>
+                    <div>
+                        <strong>Bayes Business School</strong><br>
+                        <span style="color: var(--secondary-text); font-size: 0.9em;">London, UK | September 28th – June 9th 2025</span>
+                        <ul class="styled-list" style="margin-top: 0.5rem;">
+                            <li>Conducted thorough research on guilds of the city of London with a team, where I was the leader in charge of delegating roles as well as organising team meetings and tours</li>
+                            <li>Led my team to pitch whether investors should invest in Rolls-Royce Holdings PLC. This allowed my team and me to gather precise financial data, create a compelling presentation and present in a professional manner</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>Education</h3>
+                    <ul class="styled-list">
+                        <li><strong>City University of London</strong> : 2024 – present</li>
+                        <li><strong>A-level:</strong> Mathematics (C), Sociology (C), Physical Education (C)</li>
+                        <li><strong>GCSE:</strong> Mathematics (8), English literature (8), English language (6), Science (66)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab 2: Passion Projects -->
+        <section id="projects" class="tab-content">
+            <div class="card">
+                <h2 class="section-title">Interactive Credit Risk Analyzer</h2>
+                
+                <div class="info-box">
+                    <p>This dashboard demonstrates a simplified credit risk model. Use the controls below to filter the simulated company data based on sector and minimum market capitalization.</p>
+                </div>
+                
+                <div class="filters-row">
+                    <div class="filter-group">
+                        <label for="sectorFilter">Filter by Sector:</label>
+                        <select id="sectorFilter" class="dropdown">
+                            <option value="All">All Sectors</option>
+                            <option value="Tech">Tech</option>
+                            <option value="Healthcare">Healthcare</option>
+                            <option value="Energy">Energy</option>
+                            <option value="Finance">Finance</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="marketCapSlider">Min Market Cap ($ Billions): <span id="marketCapValue">0</span></label>
+                        <input type="range" id="marketCapSlider" class="slider" min="0" max="200" value="0" step="10">
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div id="scatterChart"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab 3: Personal Interests -->
+        <section id="interests" class="tab-content">
+            <div class="card">
+                <h2 class="section-title">My Hobbies: Travel & Photography</h2>
+                <p class="subtitle-text">Beyond the world of finance and code, I am an avid traveler and amateur photographer. I believe that exploring new cultures and environments fosters creativity and broadens one's perspective, qualities that are essential in any professional field.</p>
+                
+                <hr class="divider thin">
+
+                <h3 class="subsection-title">My Travel Footprint</h3>
+                <div class="map-container">
+                    <div id="worldMap"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- App Logic -->
+    <script src="js/script.js"></script>
+</body>
+</html>
