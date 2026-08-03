@@ -6,6 +6,7 @@
 #     "plotly",
 # ]
 # ///
+
 import marimo
 
 __generated_with = "0.23.16"
@@ -64,7 +65,6 @@ def _(mo):
     * Team leadership and project coordination
     * Basic Python coding
     """)
-    tab_about
     return (tab_about,)
 
 
@@ -204,7 +204,6 @@ def _(mo, taste_chart):
     * **All I Wanted** — Paramore
     """)
     ])
-    tab_personal
     return (tab_personal,)
 
 
