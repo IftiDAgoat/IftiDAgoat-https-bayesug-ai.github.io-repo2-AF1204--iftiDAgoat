@@ -143,7 +143,6 @@ def _(cap_filter, df, mo, px, sector_filter):
         mo.hstack([sector_filter, cap_filter], justify="center", gap=2),
         chart_element
     ])
-    tab_projects
     return (tab_projects,)
 
 
